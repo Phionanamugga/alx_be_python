@@ -7,9 +7,7 @@ d = a - b
 # Multiplication
 e = a * b
 
-print("Addition:", c)
-print("Subtraction:", d)
-print("Multiplication:", e)
+
 
 # Print the results
 print(f"Addition of {a} and {b} is {c}")
