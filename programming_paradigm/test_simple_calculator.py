@@ -8,7 +8,7 @@ class TestSimpleCalculator(unittest.TestCase):
         """Set up a SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         """Test the add method with various inputs."""
         self.assertEqual(self.calc.add(2, 3), 5, "2 + 3 should equal 5")
         self.assertEqual(self.calc.add(-1, 1), 0, "-1 + 1 should equal 0")
@@ -40,6 +40,8 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(0, 5), 0.0, "0 / 5 should equal 0.0")
         self.assertIsNone(self.calc.divide(10, 0), "10 / 0 should return None")
         self.assertEqual(self.calc.divide(4.5, 2), 2.25, "4.5 / 2 should equal 2.25")
+
+    
 
 if __name__ == "__main__":
     unittest.main()
